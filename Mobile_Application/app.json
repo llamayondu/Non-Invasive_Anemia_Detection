@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Exlogrn",
+    "slug": "Exlogrn",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera for recording videos",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone for recording audio with videos",
+          "enableAudio": true
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos and videos",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to record videos",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access to save your recordings",
+        "NSMicrophoneUsageDescription": "This app needs microphone access to record audio with videos"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.mehulag4504.Exlogrn"
+    },
+    "web": {
+      "favicon": "./assets/app.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f8843c86-5415-42b5-91d8-e29258f1c050"
+      }
+    },
+    "owner": "mehulag4504"
+  }
+}

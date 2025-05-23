@@ -1,0 +1,10 @@
+{
+    "encoder_name": "efficientnet-b3",
+    "encoder_depth": 5,
+    "encoder_weights": "imagenet",
+    "decoder_use_batchnorm": true,
+    "in_channels": 3,
+    "classes": 1,
+    "decoder_attention_type": "scse",
+    "activation": null
+}

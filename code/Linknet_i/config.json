@@ -1,0 +1,11 @@
+{
+  "_model_class": "Linknet",
+  "activation": null,
+  "aux_params": null,
+  "classes": 1,
+  "decoder_use_batchnorm": true,
+  "encoder_depth": 5,
+  "encoder_name": "tu-resnet18",
+  "encoder_weights": "imagenet",
+  "in_channels": 3
+}
